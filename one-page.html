@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierra de Lanáticas | Bienvenidas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Raleway:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" type="text/css" href="css/one-page.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu a").on("click", function(t) {
+                if (""!==this.hash){
+                    t.preventDefault();
+                    var e=this.hash;
+                    $("html, body").animate({
+                        scrollTop:$(e).offset().top},
+                        800,
+                        function() {
+                            window.location.hash=e
+                        }
+                    )}
+                })
+            });
+    </script>
+</head>
+<body id="inicio">
+    
+    <header>
+        <div id="menu">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotras">Nosotras</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="principal">
+            <article>
+                <div class="contenido">
+                    <h1>Tienda Online</h1>
+                    <hr>
+
+                    <img src="img/logo-1.png" alt="">
+
+                    <h2 id="servicios">Servicios</h2>
+                    <p>Qué ofrecemos? <br> Decoración para el hogar 100% hecha a mano, con amor y materiales de primera calidad. <br> Trabajampos con fibras naturales como el yute y el algodón en todos sus grosores y colores y telas rústicas como el algodón, la arpillera y el lino creando las piezas más bonitas. <br> Asesoramiento personalizado, diseños únicos pensados para vos y diseños a medida, claro que sí! Le damos forma a tus ideas, nos contás lo que querés y nosotras lo materializamos, vos elegis el color, las medidas y sus detalles. <br> Querés aprender a tejer? Nosotras te enseñamos! Mensualmente realizamos talleres presenciales donde aprenderás las distintas técnicas en un ambiente agradable y con todos los materiales a tu disposición, al finalizar el curso te llevarás el producto que realizaste y los elementos necesatios para replicarlo. </p>
+
+                    <h2 id="productos">Productos</h2>
+                    <p>Contamos con una extensa línea de productos que podrás encontrar en nuestro catálogo agrupados por categorías: <br>Deco Hogar / Mantas y Pie de Cama / Carteras y Bolsos / Individuales y Platos de Sitio / Alfombras / Almohadones y Puff / Canastos y Organizadores / Caminos de Mesa y Manteles / Baño y Limpieza Diaria / Espejos / Accesorios / Servilletas. <br>Contamos con punto de retiro en Ciudad de Mendoza y realizamos envíos a todo el país.</p>
+                    <br>
+
+                    <img src="img/logo-2.png" alt="">
+
+                    <h2 id="nosotras">Nosotras</h2>
+                    <p>"Tejer es nuestro legado" <br> Somos 2 hermanas que aprendimos este oficio desde pequeñas y lo fuimos ampliando y perfeccionando mediante el aprendizaje de nuevas técnicas. <br> Un día tomamos coraje y decidimos abrir nuestro negocio de manera virtual y presencial, haciendo uso de la tecnología y llegando a más hogares gracias a ella. </p>
+
+                    <h2 id="contacto">Contacto</h2>
+                    <form action="">
+                        <fieldset>
+                            <legend>Completa el Formulario para contactarnos</legend>
+                            <table>
+                                <tr>
+                                    <td><label>Nombre:</label></td>
+                                    <td><input type="text" placeholder="Ingresa tu Nombre"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Correo:</label></td>
+                                    <td><input type="email" placeholder="Ingresa tu Correo"></td>
+                                </tr>
+                                <tr>
+                                    <td><label>Mensaje:</label></td>
+                                    <td><textarea placeholder="Ingresa tu Mensaje"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td><input type="submit" value="Enviar"></td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </form>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</body>
+</html>
